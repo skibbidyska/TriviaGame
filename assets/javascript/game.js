@@ -24,7 +24,7 @@ var questionSet = [{
     answer: 0,
 },
 {
-    question: "What is Steels's real name?",
+    question: "What is Steel's real name?",
     options: ["John Steel", "Larry Iron Wells", "John Henry Irons", "John Williams"],
     answer: 2,
 }];
@@ -84,8 +84,10 @@ function showCount() {
     interval--;
     $("#timer").html("<h3>" + interval + "</h3>");
     if (interval === 0) {
+        clicks++;
         clearInterval(time);
         answerOption();
+        
     }
 }
 
