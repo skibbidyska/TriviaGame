@@ -14,7 +14,7 @@ var questionSet = [{
     answer: 3,
 },
 {
-    question: "What is Black Panthers's real name?",
+    question: "What is Black Panther's real name?",
     options: ["T'Challa", "T'Chana", "T'Hacka", "T'Cha"],
     answer: 0,
 },
@@ -105,12 +105,10 @@ function answerOption(){
     }
     if(clicks === questionSet.length){
         setTimeout(resetGame, 4000);
-        console.log("restart game")
     }
     else{
         currentQuestion++;
         nextQuestion();
-        console.log("nextquestion")
         
     }
 }
